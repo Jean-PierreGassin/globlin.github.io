@@ -45,6 +45,10 @@ body {
 .hero {
   padding: 5rem 0 2.5rem;
   animation: fade-in-up 500ms ease-out;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
 }
 
 .eyebrow {
@@ -64,6 +68,22 @@ h1 {
 .subtitle {
   max-width: 64ch;
   color: var(--muted);
+}
+
+.hero-image-wrap {
+  margin: 0;
+  padding: 0.35rem;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  background: rgba(8, 18, 28, 0.72);
+  box-shadow: var(--shadow);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
 }
 
 .hero-actions {
@@ -202,6 +222,7 @@ code {
 @media (max-width: 700px) {
   .hero {
     padding-top: 3.1rem;
+    grid-template-columns: 1fr;
   }
 
   .section {
