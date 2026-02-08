@@ -23,12 +23,18 @@
         <p class="eyebrow">World of Warcraft Auction Intelligence</p>
         <h1>Globlin AH Bot</h1>
         <p class="subtitle">
-          A Discord bot that scans live auction house data and posts alerts when
-          tracked items are listed far below market value.
+          Install Globlin in your Discord server, subscribe, and manage tracked
+          auction items directly from slash commands.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#quick-start">Quick Start</a>
-          <a class="button button-ghost" href="#deploy-pages">Deploy This Page</a>
+          <a
+            class="button button-primary"
+            href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Install on Discord</a
+          >
+          <a class="button button-ghost" href="#install-flow">How It Works</a>
         </div>
       </div>
       <figure class="hero-image-wrap">
@@ -66,10 +72,10 @@
             </p>
           </article>
           <article class="card">
-            <h3>Stripe Billing Support</h3>
+            <h3>Subscription Access</h3>
             <p>
-              Optional Stripe event polling enables subscription activation and
-              status updates without webhooks.
+              Subscribe from Discord and unlock tracked item management and
+              alert delivery for your server.
             </p>
           </article>
           <article class="card">
@@ -82,60 +88,53 @@
         </div>
       </section>
 
-      <section class="section reveal" id="quick-start">
-        <h2>Quick Start</h2>
+      <section class="section reveal" id="install-flow">
+        <h2>Install and Activate</h2>
         <ol class="steps">
           <li>
-            <h3>Clone the bot repository</h3>
-            <pre><code>git clone git@github.com:Jean-PierreGassin/auction-house-scraper.git
-cd auction-house-scraper</code></pre>
+            <h3>Install the app to your Discord server</h3>
+            <p>
+              Use the install link and select the server where you want Globlin
+              alerts:
+            </p>
+            <pre><code>https://discord.com/oauth2/authorize?client_id=1246720491486580796</code></pre>
           </li>
           <li>
-            <h3>Create and activate a virtual environment</h3>
-            <pre><code>python -m venv .venv
-source .venv/bin/activate</code></pre>
+            <h3>Run <code>/setup</code> in your server</h3>
+            <p>
+              This posts onboarding instructions and a Subscribe button in the
+              current channel.
+            </p>
           </li>
           <li>
-            <h3>Install dependencies</h3>
-            <pre><code>pip install -r requirements.txt</code></pre>
+            <h3>Subscribe</h3>
+            <p>
+              Click the Subscribe button and complete checkout. Your server
+              gets activated once payment succeeds.
+            </p>
           </li>
           <li>
-            <h3>Create local config and subscription files</h3>
-            <pre><code>cp config.json.example config.json
-cp customer-subscriptions.json.example customer-subscriptions.json
-mkdir -p customer-tracked-items</code></pre>
+            <h3>Verify access with <code>/subscription_status</code></h3>
+            <p>
+              Confirm your subscription status and alert channel are active.
+            </p>
           </li>
           <li>
-            <h3>Fill required credentials in <code>config.json</code></h3>
-            <pre><code>{
-  "discord": { "token": "YOUR_DISCORD_TOKEN" },
-  "blizzard": {
-    "client_id": "YOUR_CLIENT_ID",
-    "client_secret": "YOUR_CLIENT_SECRET"
-  },
-  "access": { "owner_user_ids": [123456789012345678] }
-}</code></pre>
-          </li>
-          <li>
-            <h3>Run the bot</h3>
-            <pre><code>python main.py</code></pre>
-            <p class="muted">
-              Optional: run the web control panel with
-              <code>python web_server.py</code>.
+            <h3>Manage tracked items with <code>/items</code></h3>
+            <p>
+              Add or remove items and choose standard market-average tracking
+              or item-level-specific tracking.
             </p>
           </li>
         </ol>
       </section>
 
       <section class="section reveal">
-        <h2>Discord Commands</h2>
+        <h2>Customer Commands</h2>
         <div class="command-grid">
           <p><code>/setup</code> Post onboarding and subscribe button.</p>
           <p><code>/subscription_status</code> Show guild subscription state.</p>
           <p><code>/items</code> Open guided tracked-item management panel.</p>
-          <p><code>/upsert_subscription</code> Owner-only subscription write.</p>
-          <p><code>/remove_subscription</code> Owner-only subscription remove.</p>
-          <p><code>/list_subscriptions</code> Owner-only subscription list.</p>
         </div>
       </section>
 
@@ -149,23 +148,10 @@ mkdir -p customer-tracked-items</code></pre>
             price targets.
           </li>
           <li>
-            Matches trigger formatted Discord alerts in each subscribed guild's
-            configured channel.
+            Matching deals trigger formatted Discord alerts in your configured
+            channel so you can snipe quickly.
           </li>
         </ul>
-      </section>
-
-      <section class="section reveal" id="deploy-pages">
-        <h2>Deploy This Page to GitHub Pages</h2>
-        <pre><code>git clone git@github.com:Jean-PierreGassin/globlin.github.io.git
-cp -r github-pages/* globlin.github.io/
-cd globlin.github.io
-git add .
-git commit -m "add bot landing page"
-git push origin main</code></pre>
-        <p class="muted">
-          Repo URL: <code>git@github.com:Jean-PierreGassin/globlin.github.io.git</code>
-        </p>
       </section>
     </main>
   </body>
