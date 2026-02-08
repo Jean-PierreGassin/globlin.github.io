@@ -71,12 +71,20 @@ h1 {
 }
 
 .hero-image-wrap {
+  display: block;
   margin: 0;
   padding: 0.35rem;
   border-radius: 22px;
   border: 1px solid var(--border);
   background: rgba(8, 18, 28, 0.72);
   box-shadow: var(--shadow);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.hero-image-wrap:hover {
+  transform: translateY(-2px);
+  border-color: #3f6a8f;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.42);
 }
 
 .hero-image {
@@ -217,6 +225,65 @@ code {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.ledger-section p {
+  margin-top: -0.3rem;
+  margin-bottom: 0.85rem;
+}
+
+.ledger-chart-wrap {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(7, 15, 24, 0.92), rgba(10, 20, 30, 0.82));
+  overflow: hidden;
+}
+
+.ledger-chart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chart-grid {
+  stroke: rgba(166, 193, 216, 0.17);
+  stroke-width: 1;
+}
+
+.chart-axis {
+  stroke: rgba(166, 193, 216, 0.55);
+  stroke-width: 1.2;
+}
+
+.chart-area {
+  fill: rgba(61, 209, 163, 0.18);
+}
+
+.chart-line {
+  fill: none;
+  stroke: #3dd1a3;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-point {
+  fill: #f5a524;
+  stroke: #091621;
+  stroke-width: 2;
+}
+
+.chart-xlabel,
+.chart-ylabel {
+  fill: #a6c1d8;
+  font-size: 13px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.chart-amount {
+  fill: #d4e7f8;
+  font-size: 12px;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 @media (max-width: 700px) {

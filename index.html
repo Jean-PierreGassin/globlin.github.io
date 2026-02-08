@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
@@ -23,8 +24,8 @@
         <p class="eyebrow">World of Warcraft Auction Intelligence</p>
         <h1>Globlin AH Bot</h1>
         <p class="subtitle">
-          Install Globlin in your Discord server, subscribe, and manage tracked
-          auction items directly from slash commands.
+          Install Globlin in your Discord server and manage tracked auction
+          items directly from slash commands.
         </p>
         <div class="hero-actions">
           <a
@@ -37,52 +38,68 @@
           <a class="button button-ghost" href="#install-flow">How It Works</a>
         </div>
       </div>
-      <figure class="hero-image-wrap">
+      <a
+        class="hero-image-wrap"
+        href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Install Globlin on Discord"
+      >
         <img
           class="hero-image"
           src="./globlin-hero.png"
-          alt="Globlin auction bot hero artwork"
+          alt="Globlin auction bot hero artwork with Add to Discord call to action"
         />
-      </figure>
+      </a>
     </header>
 
     <main>
+      <section class="section reveal ledger-section">
+        <h2>12-Month Gold Ledger Growth</h2>
+        <p class="muted">
+          Example progression from sniping underpriced listings and flipping for
+          market value.
+        </p>
+        <div class="ledger-chart-wrap">
+          <svg
+            id="ledger-chart"
+            class="ledger-chart"
+            viewBox="0 0 960 360"
+            role="img"
+            aria-label="Animated graph showing gold income increasing over 12 months"
+          ></svg>
+        </div>
+      </section>
+
       <section class="section reveal">
         <h2>Core Features</h2>
         <div class="cards">
           <article class="card">
-            <h3>Real-Time Auction Scans</h3>
+            <h3>Catch Deals Fast</h3>
             <p>
-              Continuously checks Blizzard auction data and flags listings at
-              or below your configured undercut threshold.
+              Get alerted when your tracked items are posted well below market,
+              so you can buy before other snipers do.
             </p>
           </article>
           <article class="card">
-            <h3>Per-Server Tracking</h3>
+            <h3>Track What You Farm</h3>
             <p>
-              Each Discord guild has isolated tracked items and subscription
-              status for true multi-tenant operation.
+              Focus on your own markets, materials, and gear targets instead of
+              watching the entire auction house manually.
             </p>
           </article>
           <article class="card">
-            <h3>Item-Level Aware Pricing</h3>
+            <h3>Higher Profit Accuracy</h3>
             <p>
-              Supports item-level-specific tracking for gear where value shifts
-              heavily by ilvl.
+              Use item-level aware tracking for gear where ilvl changes price,
+              which reduces bad buys and improves margins.
             </p>
           </article>
           <article class="card">
-            <h3>Subscription Access</h3>
+            <h3>In-Discord Workflow</h3>
             <p>
-              Subscribe from Discord and unlock tracked item management and
-              alert delivery for your server.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Web Control Panel</h3>
-            <p>
-              Optional local panel to start or stop the bot process, inspect
-              logs, and review tracked item summaries.
+              Manage tracked items directly from slash commands with no
+              external dashboard required.
             </p>
           </article>
         </div>
@@ -93,11 +110,16 @@
         <ol class="steps">
           <li>
             <h3>Install the app to your Discord server</h3>
+            <p>Select the server where you want Globlin alerts:</p>
             <p>
-              Use the install link and select the server where you want Globlin
-              alerts:
+              <a
+                class="button button-primary"
+                href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Install on Discord</a
+              >
             </p>
-            <pre><code>https://discord.com/oauth2/authorize?client_id=1246720491486580796</code></pre>
           </li>
           <li>
             <h3>Run <code>/setup</code> in your server</h3>
