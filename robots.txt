@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jean-pierregassin.github.io/auction-house-scraper/sitemap.xml
