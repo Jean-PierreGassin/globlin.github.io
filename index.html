@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Globlin | WoW Auction Sniper Alerts for Discord</title>
+    <title>Globlin | Fast WoW AH Sniper Alerts in Discord</title>
     <meta
       name="description"
-      content="Globlin scans WoW Auction House data continuously and sends Discord alerts for underpriced listings so your server snipes faster."
+      content="Globlin sends fast Discord alerts for underpriced WoW Auction House listings so you can snipe before the market reacts."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,12 +22,11 @@
 
     <header class="hero reveal">
       <div class="hero-copy">
-        <p class="eyebrow">WoW Auction House Sniper Alerts</p>
-        <h1>Catch Underpriced Auctions Before Everyone Else</h1>
+        <p class="eyebrow">Discord-First Auction Sniping</p>
+        <h1>Buy Cheap Listings Before Everyone Else</h1>
         <p class="subtitle">
-          Globlin is a Discord-first auction scanner for players and guild teams
-          who want fast, automated snipe alerts without babysitting the Auction
-          House UI.
+          Globlin scans the WoW AH continuously and posts actionable sniper alerts
+          directly in your Discord channel.
         </p>
         <div class="hero-actions">
           <a
@@ -37,7 +36,7 @@
             rel="noopener noreferrer"
             >Install on Discord</a
           >
-          <a class="button button-ghost" href="#comparison">See Why It Wins</a>
+          <a class="button button-ghost" href="#quick-start">Quick Start</a>
         </div>
       </div>
       <a
@@ -50,7 +49,7 @@
         <img
           class="hero-image"
           src="./globlin-hero.png"
-          alt="Globlin auction bot hero artwork with Add to Discord call to action"
+          alt="Globlin auction bot hero artwork"
         />
       </a>
     </header>
@@ -58,190 +57,118 @@
     <main>
       <section class="section proof reveal" aria-label="Performance proof points">
         <article class="proof-card">
-          <p class="proof-label">Scanner Loop Cadence</p>
+          <p class="proof-label">Loop Cadence</p>
           <p class="proof-value" data-count="1">1s</p>
-          <p class="proof-note">Main scan coordinator runs every second.</p>
         </article>
         <article class="proof-card">
-          <p class="proof-label">Fast Realm Recheck</p>
+          <p class="proof-label">Fast Recheck</p>
           <p class="proof-value" data-count="2">2-3s</p>
-          <p class="proof-note">Aggressive polling window near AH update times.</p>
         </article>
         <article class="proof-card">
-          <p class="proof-label">Concurrent Realm Workers</p>
+          <p class="proof-label">Parallel Realm Workers</p>
           <p class="proof-value" data-count="12">12</p>
-          <p class="proof-note">Parallel realm scans for broader coverage.</p>
         </article>
         <article class="proof-card">
-          <p class="proof-label">Latest Runtime Pass</p>
+          <p class="proof-label">Recent Coverage</p>
           <p class="proof-value" data-count="83">83 realms</p>
-          <p class="proof-note">Recent status: 83/83 realms checked.</p>
         </article>
       </section>
 
-      <section class="section reveal" id="offer">
-        <h2>What You Get</h2>
+      <section class="section reveal">
+        <h2>Why People Pick Globlin</h2>
         <div class="cards">
           <article class="card">
-            <h3>Deal Alerts Built for Sniping</h3>
-            <p>
-              Alerts fire when tracked listings hit your configured discount
-              threshold versus market value, so you focus on profitable buys.
-            </p>
+            <h3>Faster Alert Loop</h3>
+            <p>1-second scan scheduler with aggressive fast polling windows.</p>
           </article>
           <article class="card">
-            <h3>Item-Level Aware Pricing</h3>
-            <p>
-              Gear pricing changes by item level. Globlin supports item-level
-              targets to reduce false positives and bad flips.
-            </p>
+            <h3>Better Gear Precision</h3>
+            <p>Item-level aware targets reduce bad buys on variable ilvl gear.</p>
           </article>
           <article class="card">
-            <h3>Multi-Server Customer Model</h3>
-            <p>
-              Each Discord server has its own subscription state, tracked items,
-              and alert channel. Clean separation for communities and clients.
-            </p>
-          </article>
-          <article class="card">
-            <h3>All Workflow Inside Discord</h3>
-            <p>
-              Setup, subscription checks, and item management are available via
-              slash commands with no spreadsheet workflow.
-            </p>
+            <h3>Zero Dashboard Friction</h3>
+            <p>Use slash commands in Discord to setup and manage tracked items.</p>
           </article>
         </div>
+        <p class="section-cta">
+          <a
+            class="button button-primary"
+            href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Start Sniping Now</a
+          >
+        </p>
+      </section>
+
+      <section class="section reveal" id="quick-start">
+        <h2>Quick Start</h2>
+        <ol class="steps compact">
+          <li>Install Globlin to your server.</li>
+          <li>Run <code>/setup</code> in your alert channel.</li>
+          <li>Use <code>/items</code> to track targets and get alerts.</li>
+        </ol>
+        <p class="section-cta">
+          <a
+            class="button button-primary"
+            href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Install Globlin</a
+          >
+        </p>
       </section>
 
       <section class="section reveal" id="comparison">
-        <h2>Why Globlin Beats Generic AH Tooling for Discord Teams</h2>
-        <p class="muted">
-          TradeSkillMaster and Saddlebag are strong products. Globlin is built
-          for a different job: server-level, real-time Discord execution.
-        </p>
+        <h2>Globlin vs Generic Tooling</h2>
         <div class="table-wrap">
           <table class="comparison-table">
             <thead>
               <tr>
-                <th>Capability</th>
+                <th>What Matters</th>
                 <th>Globlin</th>
-                <th>TSM</th>
-                <th>Saddlebag</th>
+                <th>Typical Alternative</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Discord-first setup and management</td>
-                <td>Native slash-command flow</td>
-                <td>In-game addon workflow</td>
-                <td>Discord + web + addon JSON flow</td>
+                <td>Workflow</td>
+                <td>Discord-first, slash commands</td>
+                <td>Addon + external setup flow</td>
               </tr>
               <tr>
-                <td>Retail sniper refresh behavior</td>
-                <td>1s scheduler with fast rechecks</td>
-                <td>30s delay between sniper searches</td>
-                <td>Price-alert oriented workflow</td>
+                <td>Retail Sniper Refresh</td>
+                <td>1s orchestration + fast realm windows</td>
+                <td>Often slower/manual refresh cycles</td>
               </tr>
               <tr>
-                <td>Server-scoped subscriptions and alerts</td>
-                <td>Built-in multi-guild isolation</td>
-                <td>Per-player addon/account model</td>
-                <td>General Discord bot command model</td>
-              </tr>
-              <tr>
-                <td>Item-level target support for gear</td>
-                <td>Built in</td>
-                <td>Not a dedicated ilvl alert workflow</td>
-                <td>Not core pitch for price-sniper setup</td>
+                <td>Team Use</td>
+                <td>Server-scoped subscriptions/channels</td>
+                <td>Mostly player/account-centric workflows</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p class="source-note">
-          Competitive references:
+          References:
           <a
             href="https://support.tradeskillmaster.com/en_US/tsm-addon-documentation/tsm-addon-sniper-operations"
             target="_blank"
             rel="noopener noreferrer"
-            >TSM Sniper Operations</a
-          >,
-          <a
-            href="https://support.tradeskillmaster.com/en_US/addon/how-do-i-fix-an-error-about-appdatalua-being-empty"
-            target="_blank"
-            rel="noopener noreferrer"
-            >TSM Desktop/AppHelper dependency</a
+            >TSM Sniper docs</a
           >,
           <a
             href="https://saddlebagexchange.com/wow/price-alert"
             target="_blank"
             rel="noopener noreferrer"
-            >Saddlebag Price Alert workflow</a
-          >,
-          <a
-            href="https://saddlebagexchange.com/wow/region-undercut"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Saddlebag region undercut workflow</a
+            >Saddlebag price alerts</a
           >.
         </p>
       </section>
 
-      <section class="section reveal" id="speed">
-        <h2>Speed Architecture That Converts to Better Snipes</h2>
-        <ul class="list">
-          <li><code>@tasks.loop(seconds=1)</code> keeps scan orchestration continuous.</li>
-          <li>Realm scans run with <code>AUCTION_SCAN_CONCURRENCY=12</code>.</li>
-          <li>
-            Fast polling window checks realms every <code>2-3 seconds</code> near
-            expected AH update time.
-          </li>
-          <li>
-            Outside the fast window, realms are revisited roughly every
-            <code>20-23 seconds</code> with jitter to reduce burst traffic.
-          </li>
-          <li>
-            Blizzard request pacing is set to <code>75ms</code> minimum between
-            requests in current config.
-          </li>
-        </ul>
-      </section>
-
-      <section class="section reveal" id="install-flow">
-        <h2>Install and Activate in Minutes</h2>
-        <ol class="steps">
-          <li>
-            <h3>Install Globlin to your Discord server</h3>
-            <p>
-              <a
-                class="button button-primary"
-                href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Install on Discord</a
-              >
-            </p>
-          </li>
-          <li>
-            <h3>Run <code>/setup</code> in your alert channel</h3>
-            <p>Globlin posts onboarding plus your subscription action button.</p>
-          </li>
-          <li>
-            <h3>Confirm status with <code>/subscription_status</code></h3>
-            <p>Verify your guild is active and routed to the right channel.</p>
-          </li>
-          <li>
-            <h3>Configure tracked items with <code>/items</code></h3>
-            <p>Set market-average and item-level targets for your strategy.</p>
-          </li>
-        </ol>
-      </section>
-
       <section class="section cta reveal" id="cta">
-        <h2>Stop Reacting Late to Cheap Listings</h2>
-        <p>
-          Install Globlin and let your Discord server receive actionable sniper
-          alerts as auction data updates.
-        </p>
+        <h2>Ready to Catch More Deals?</h2>
+        <p>Install once, configure items, and let Discord deliver your snipes.</p>
         <a
           class="button button-primary"
           href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
@@ -251,5 +178,13 @@
         >
       </section>
     </main>
+
+    <a
+      class="sticky-cta"
+      href="https://discord.com/oauth2/authorize?client_id=1246720491486580796"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Install Globlin</a
+    >
   </body>
 </html>
